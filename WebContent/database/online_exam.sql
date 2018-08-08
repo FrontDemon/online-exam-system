@@ -332,9 +332,6 @@ CREATE TABLE `oes_student_info` (
 -- ----------------------------
 INSERT INTO `oes_student_info` VALUES ('201521314001', '123456', '詹姆斯', '000000@qq.com');
 INSERT INTO `oes_student_info` VALUES ('201521314002', '123456', '库里', '123@163.com');
-INSERT INTO `oes_student_info` VALUES ('201521314321', '123456', '马伟涛', '81569@qq.com');
-INSERT INTO `oes_student_info` VALUES ('201521314322', '123456', '杨铎', '994298760@qq.com');
-INSERT INTO `oes_student_info` VALUES ('201521314323', '123456', '陈国', '815699563@qq.com');
 INSERT INTO `oes_student_info` VALUES ('201521314330', '123456', 'sss', '82268991@qq.com');
 INSERT INTO `oes_student_info` VALUES ('201521314345', '123456', 'bbb', '123498760@qq.com');
 INSERT INTO `oes_student_info` VALUES ('201521314354', '123456', '453', '523543@qq.com');
