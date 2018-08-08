@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd 
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context-4.3.xsd 
+      http://www.springframework.org/schema/mvc
+      http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+
+    <!-- 启用注解驱动,即解决了@Controller注解的使用前提配置 -->
+    <mvc:annotation-driven/>
+  
+    <!-- 在xml配置了这个标签后，spring可以自动去扫描base-pack下面或者子包下面的Java文件，
+     如果扫描到有@Component @Controller@Service等这些注解的类，则把这些类注册为bean
+           注意：如果配置了<context:component-scan>那么<context:annotation-config/>标签
+           就可以不用再xml中配置了，因为前者包含了后者  --> 
+    <context:component-scan base-package="com.oes.mwt.controller"></context:component-scan>
+</beans>
